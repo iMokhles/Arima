@@ -1,0 +1,47 @@
+//
+// Prefix header for all source files of the 'Arima' target in the 'Arima' project
+//
+
+#ifdef __OBJC__
+
+#import <iMoMacros.h> // contains device type check ( IPAD or IPHONE ) and other stuffs which isn't important ;)
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+#import <ParseUI/ParseUI.h>
+#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
+#import <ParseTwitterUtils/ParseTwitterUtils.h>
+#import <ParseUI/ParseUI.h>
+#import <Bolts/Bolts.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <imounbox/imounbox.h>
+#import <libimodevtools2/iMoDevTools2Own.h>
+#import "iCarousel.h"
+#import "Colours.h"
+#import "ARNavigationViewController.h"
+#import "ARMainViewController.h"
+
+
+#define kMainViewController                            (ARMainViewController *)[UIApplication sharedApplication].delegate.window.rootViewController
+#define kNavigationController (ARNavigationController *)[(ARMainViewController *)[UIApplication sharedApplication].delegate.window.rootViewController rootViewController]
+
+#define USER_CLASS_NAME                 @"_User"
+#define USER_AVATAR                     @"avatar"
+#define USER_COVER_IMAGE                @"coverImage"
+#define USER_USERNAME                   @"username"
+#define USER_FULLNAME                   @"fullName"
+#define USER_EMAIL                      @"email"
+#define USER_ABOUT_ME                   @"aboutMe"
+#define USER_DEVICE_TOKEN               @"deviceToken_Push"
+#define USER_DEVICE_PLAYER_ID           @"userPlayer_ID"
+#define USER_PASS_WORD                  @"user_Password"
+#define USER_CONF_PASS_WORD             @"conf_User_Password"
+#define	USER_LOCATION					@"location"
+
+#define USER_DEVICE_ID @"user_device_id"
+#define USER_CATG @"user_catg"
+#define DEVICE_KEY @"logInViewController:didLogInUser"
+#define USER_AVATAR  @"avatar"
+
+#endif

@@ -1,0 +1,9 @@
+Package: com.imokhles.Arima
+Name: Arima
+Version: 1.0-1
+Description: Arima AppStore style for Cydia ;)
+Section: System
+Depends: firmware (>= 5.0), mobilesubstrate
+Priority: optional
+Architecture: iphoneos-arm
+Author: iMokhles
